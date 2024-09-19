@@ -1,6 +1,6 @@
 package models;
 
-public class First_Number {
+public class FirstNumber {
 
     private Double numberOne = null;
 

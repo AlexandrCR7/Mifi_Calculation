@@ -1,10 +1,6 @@
 package service;
 
-import models.First_Number;
-import models.Operator;
-import models.Second_Number;
-
-public class Calculator_Scanner {
+public class CalculatorScanner {
     public Double first_number() {
         System.out.println("Введите первое число:");
         java.util.Scanner scanner = new java.util.Scanner(System.in);

@@ -1,8 +1,8 @@
 package service;
 
-import models.First_Number;
+import models.FirstNumber;
 import models.Operator;
-import models.Second_Number;
+import models.SecondNumber;
 
 import java.util.Scanner;
 
@@ -10,18 +10,18 @@ public class CalculatorService {
 
     public void calculatorService(){
         //Получаем значения из консоли
-        Calculator_Scanner numberOne = new Calculator_Scanner();
-        Calculator_Scanner mathOperator = new Calculator_Scanner();
-        Calculator_Scanner numberTwo = new Calculator_Scanner();
+        CalculatorScanner numberOne = new CalculatorScanner();
+        CalculatorScanner mathOperator = new CalculatorScanner();
+        CalculatorScanner numberTwo = new CalculatorScanner();
 
         //Создаем объекты, поля которых заполняют значения, полученные из консоли
-        First_Number one = new First_Number();
+        FirstNumber one = new FirstNumber();
         one.setNumberOne(numberOne.first_number());
 
         Operator operator = new Operator();
         operator.setMathOperator(mathOperator.getOperator());
 
-        Second_Number two = new Second_Number();
+        SecondNumber two = new SecondNumber();
         two.setNumberTwo(numberTwo.second_number());
 
         //Проверяем не является ли второе число нулем и знак операции делением

@@ -1,7 +1,7 @@
 package models;
 
 
-public class Second_Number {
+public class SecondNumber {
     private Double numberTwo = null;
 
     public Double getNumberTwo() {
